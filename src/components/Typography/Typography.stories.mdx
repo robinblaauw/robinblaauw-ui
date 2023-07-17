@@ -1,0 +1,70 @@
+import { Meta, Canvas } from "@storybook/addon-docs";
+import Typography from "./Typography";
+
+<Meta title="Components/Typography" />
+
+<style>
+  {`
+    .selector {
+      width: 88px;
+      font-weight: 700;
+      opacity: 0.8;
+    }
+    .divider {
+      gap: 20px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      margin-top: 20px;
+    }
+    
+  `}
+</style>
+
+export const SampleText = "The quick brown fox jumps over the lazy dog";
+
+# Typography
+
+**Font:** Poppins
+
+**Weights:** 400(regular), 600(semibold), 700(bold)
+
+<br />
+<div className="divider">
+  <div className="selector">h1:</div>
+  <Typography variant="h1">{SampleText}</Typography>
+</div>
+<div className="divider">
+  <div className="selector">h2:</div>
+  <Typography variant="h2">{SampleText}</Typography>
+</div>
+<div className="divider">
+  <div className="selector">h3:</div>
+  <Typography variant="h3">{SampleText}</Typography>
+</div>
+<div className="divider">
+  <div className="selector">h4:</div>
+  <Typography variant="h4">{SampleText}</Typography>
+</div>
+
+<br />
+<div className="divider">
+  <div className="selector">Leading:</div>
+  <Typography variant="leading">{SampleText}</Typography>
+</div>
+<div className="divider">
+  <div className="selector">Intro:</div>
+  <Typography variant="intro">{SampleText}</Typography>
+</div>
+<div className="divider">
+  <div className="selector">body1:</div>
+  <Typography variant="body1">{SampleText}</Typography>
+</div>
+<div className="divider">
+  <div className="selector">subtext:</div>
+  <Typography variant="subtext">{SampleText}</Typography>
+</div>
+<div className="divider">
+  <div className="selector">tagline:</div>
+  <Typography variant="tagline">{SampleText}</Typography>
+</div>
